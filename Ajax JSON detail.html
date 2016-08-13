@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Reverse Geocoding</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        
+        <script>
+//        $.getJSON('https://freegeoip.net/json/') 
+        $.get('https://freegeoip.net/json/') 
+         .done (function(location)
+         {
+            $('#country').html(location.country_name);
+            $('#country_code').html(location.country_code);
+            $('#region').html(location.region_name);
+            $('#region_code').html(location.region_code);
+            $('#city').html(location.city);
+            $('#latitude').html(location.latitude);
+            $('#longitude').html(location.longitude);
+            $('#timezone').html(location.time_zone);
+            $('#ip').html(location.ip);
+         });
+        </script>
+        
+    </head>
+    <body>
+        Country name: <span id="country"></span><br>
+        Country ISO code: <span id="country_code"></span><br>
+        Region: <span id="region"></span><br>
+        Region code: <span id="region_code"></span><br>
+        City: <span id="city"></span><br>
+        Latitude: <span id="latitude"></span><br>
+        Longitude: <span id="longitude"></span><br>
+        Time zone: <span id="timezone"></span><br>
+        IP address: <span id="ip"></span>
+    </body>
+</html>
