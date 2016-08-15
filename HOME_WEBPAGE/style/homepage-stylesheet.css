@@ -25,7 +25,6 @@
 	background-color: #ffffff;
 }
 
-
 .subtextLayout {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -46,15 +45,6 @@
 	position: relative;	
 }
 
-.footer {
-  position: relative;
-  width: auto;
-	bottom: 12%;
-  height: 150px;
-  background-color:  #131313;
-  text-align: center;
-}
-
 /*
 -----------------------------------------
 	Background Images CSS styles
@@ -64,14 +54,11 @@
 .mainBackground {
   	background-image: url(../images/backgrounds/main-background.jpg);
   	min-height: 100%;
-	padding-top: 170px;
-			opacity: 1;
-
 }
 
 .secondaryBackground {
-  background-image: url(../images/backgrounds/second-background.jpg);
-  min-height: 400px;
+	background-image: url(../images/backgrounds/second-background.jpg);
+  	min-height: 400px;
 }
 
 .thirdBackground {
@@ -177,27 +164,3 @@ h2 {
 p {
 	text-align: center;
 }
-
-.mainContainer {
-	padding-top: 54px;
-}
-
-.headContainer {
-	margin-left: 8px;
-}
-
-/*
-.footer {
-	display: block;
-  position: relative;
-  width: auto;
-  top: -15%;
-  height: 140px;
-  background-color:  #131313;
-  text-align: center;
-}
-
-                        <div class = "footer">
-                <p> Look at the world from different perspectives to understand that beauty is all around you, in the small things that surround you. It is easier to see beyond the end of your nose when you travel........</p>
-            </div>
-*/
