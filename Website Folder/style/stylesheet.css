@@ -142,13 +142,12 @@ li a:hover:not(#active){
 	position: absolute;
 	left: 0;
 	height: inherit;
-	width: 60%;
+	width: 690px;
 }
 
 .mapContainer {
 	position: absolute;
-	float: right;
-	right: 0;
+	margin-left:690px;
 	height: 40%;
 	width: 40%;	
 }

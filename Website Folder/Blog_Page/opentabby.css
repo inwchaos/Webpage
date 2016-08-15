@@ -1,5 +1,4 @@
-.openTabby,
-.openTabby * {
+.openTabby, .openTabby * {
   box-sizing: border-box;
 }
 
@@ -9,7 +8,7 @@
 .openTabby .openTabby--nav {
   position: relative;
   display: none;
-  width: 10000px;
+  width: 100%;
 }
 .openTabby .openTabby--nav:after {
   display: block;
@@ -194,7 +193,7 @@
   background: #f4f4f4;
 }
 .openTabby .openTabby--nav ul {
-  padding: 3.5rem 3.5rem 0;
+/*  padding: 3.5rem 3.5rem 0;*/
   float: left;
 }
 .openTabby .openTabby--nav ul li {
