@@ -4,17 +4,20 @@
         <meta charset = "UTF-8">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        
 
         <link rel = "stylesheet" type = "text/css" href = "style/stylesheet.css">
         <link rel = "stylesheet" type = "text/css" href = "style/jquery-ui.css">
-		<script src="jquery/jquery-1.12.4.js"> </script>    
-        <script src="jquery/jquery-ui.js"> </script>
-        <script src="scripts/tabBlogNavigation.js"> </script>
+        <link rel='stylesheet' type='text/css' href='./Blog_Page/main.css'/>
+        <link rel='stylesheet' type='text/css' href='./Blog_Page/opentabby.css'/>
+        <script src="http://www.jqueryscript.net/css/jquerysctipttop.css"></script>
+        <script src="http://fonts.googleapis.com/css?family=Raleway"></script>
         
-        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>        
-    
-        <title>Blog Name</title> 
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src='./Blog_Page/opentabby.js'></script>
+     
+        <title>Personal Bloge</title> 
     </head>
     
 	<body>
@@ -35,32 +38,60 @@
             
         	<div class = "bodyContainer containerLayout bodyFont">
             	<div class = "blogContainer">
-                    <div id="tabs">
-                  		<ul>
-                            <li><a href="#tabs-1">Currently Trending</a></li>
-                            <li><a href="#tabs-2">Sort By Hottest</a></li>
-                            <li><a href="#tabs-3">Sort By Newest</a></li>
-                            <li><a href="#tabs-3">Sort By Oldest</a></li>
-                            <li><a href="#tabs-4">Post a Blog</a></li>
-                    	</ul>
-                        <div id="tabs-1">
-                            <p>Spammy Spammy text for Trending posts</p>
-                        </div>
-                        <div id="tabs-2">
-                            <p>Just some lovely text for testing hotest</p>
-                        </div>
-                        <div id="tabs-3">
-                            <p>More text do newest posts</p>
-                      	</div>
-                        <div id="tabs-4">
-                            <p>More text do newest posts, POST something :3</p>
-                      	</div>                        
-                    </div>                  
+                    <div class='openTabby' id='tabs1'>
+                        <div class='openTabby--slidesContainer'>
+
+                        <article id='1' data-tab-name='Currently Trending' class='openTabby--slide'>
+                            <h1>Something about HTML</h1>
+                            <h2>Lorem ipsum dolor sit amet</h2>
+                            <p>Lorem </p>
+                        </article>
+
+                        <article id='2' data-tab-name='Sort By Hottest' class='openTabby--slide'>
+                            <h1>Preprocessors?</h1>
+                            <h2>Sed ut perspiciatis unde omnis</h2>
+                            <p>Sed</p>
+                        </article>
 
 
+                        <article id='3' data-tab-name='Sort By Newest' class='openTabby--slide'>
+                            <h1>Interaction to web pages!</h1>
+                            <h2>At vero eos et accusamus</h2>
+                            <p>At</p>
+                        </article>
+
+                        <article id='4' data-tab-name='Sort By Oldest' class='openTabby--slide'>
+                            <h1>Server side? WHAT?!</h1>
+                            <h2>Lorem ipsum dolor sit amet</h2>
+                            <p>Lorem</p>
+                        </article>
+                            
+                        <article id='4' data-tab-name='Post a Blog' class='openTabby--slide'>
+                            <h1>Server side? WHAT?!</h1>
+                            <h2>Lorem ipsum dolor sit amet</h2>
+                            <p>Lorem</p>
+                        </article>
+
+                        </div>
+                    </div>
+
+                    <script>
+                    $(".openTabby").openTabby();
+                    </script>
+                    <script type="text/javascript">
+                        var _gaq = _gaq || [];
+                        _gaq.push(['_setAccount', 'UA-36251023-1']);
+                        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+                        _gaq.push(['_trackPageview']);
+
+                        (function() {
+                            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                        })();
+                    </script>              
+                    
            	  	</div>
-                
-   
                 
             	<div class = "mapContainer">
                     <div id="map" style="width: 500px; height: 400px;"></div>
@@ -68,7 +99,7 @@
                 </div>
                 
     
-        	</div>
+            </div>
      	</div>
     </body>
 </html> 
