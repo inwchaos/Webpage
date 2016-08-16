@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+-------------------
+	Font style
+-------------------	
+*/
+
+.navigationFont {
+	font-family: Rajdhani;
+   	font-weight: normal;	
+	font-size: 30px;
+	padding-top: 10px;
+}
+
+/*
+----------------------------------
+	Navigation CSS Starts Here
+----------------------------------	
+*/
+
+.navigation {
+    position: fixed;	
+    height: 100%;
+    width: 0%;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.7s;
+    text-align: center;
+    z-index: 1;		
+}
+
+.navigation a {
+    display: block;	
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s;	
+}
+
+.leftNavigation {
+	position: absolute;
+	min-height: 100%;	
+	left: 0;
+	width: 75%;	
+	background: #242422;
+	opacity: 0.93;
+}
+
+.rightNavigation {
+	position: absolute;
+	min-height: 100%;	
+	right: 0;
+	width: 25%;	
+	background: #242422;
+}
+
+.navigation .closeNavigationBar {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;	
+	border-radius: 5px;	
+    position: absolute;
+    top: 2%;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+	width: 85%;
+	text-align: centre;
+	color: #ffffff;	
+}
+
+.closeNavigationBar:hover, .openNavigationBar:hover {
+	color: #008CBA;	
+}
+
+/*
+---------------------------------------------------------
+	Navigation Redirection-Links/Text CSS Starts Here
+---------------------------------------------------------	
+*/
+
+ul {
+	-webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;	
+	list-style-type: none;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	padding: 0;
+	margin: 0;
+	top: 31%;
+	text-align: center;		
+}
+
+li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #585B5B;	
+}
+
+li a:hover {
+    color: #008CBA;
+	text-decoration: underline;
+    background-color: #EDEDED;	
+}
+
+li a#current {
+    color: #ffffff;	
+	background-color: #008CBA;
+	text-decoration: underline;	
+}
+
+li a:hover:not(#active){
+    color: #008CBA;	
+	background-color: transparent;	
+}
+
+li::after {
+	content: "---";
+	padding-top: 1px;
+	padding-bottom: 1px;	
+	color: #FFFFFF;
+}

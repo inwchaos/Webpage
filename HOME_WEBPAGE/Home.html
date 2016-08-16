@@ -3,26 +3,59 @@
 	<head>
     	<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-       	<meta name="viewport" content="width = device-width, initial-scale = 1">
+<!-- ATTACHED STYLESHEETS -->        
         <link rel="stylesheet" type ="text/css" href="style/homepage-stylesheet.css">
         <link rel="stylesheet" type ="text/css" href="style/font-stylesheet.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="style/navigation-stylesheet.css" rel="stylesheet" type="text/css">
+<!-- ATTACHED SCRIPTS -->           
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script type="text/javascript" src="scripts/homePageScrolling.js"></script>
-        
+        <script type="text/javascript" src="scripts/navigationBar.js"></script>     
         <title>Dérive</title>
 	</head>
-    
+
 	<body>
     	<div id="Top"></div>
+<!-- START FIRST IMAGE, A TRAVELLER.....  -->         
         <div class="fourthBackground backgroundLayout">
-            <div class="quoteLayout">
-        		<span class="quoteText">A TRAVELLER.....</span>
-        	</div>
-            <div class="jumpText">
-            	<div class="navigationIcon"> &#8650; </div>
-               	<div class="navigationText"> <a href="#Bottom"> Jump to navigation </a> </div>
-          	</div> 
-		</div>
+            <div class="scrollingTextDown">
+            	<div class="scrollingIconDown">&#8650;</div>
+               	<div class="scrollingText"><a href="#Bottom">Jump to navigation</a></div>
+          	</div>
+            
+<!-- START NAVIGATION BAR -->           
+            <div class = "nameNavigation">
+            	<div class="nameNavigation">
+                	<h1>Dérive</h1>
+                </div>
+                
+                <div class="menuIconNavigation">
+                	<h1 class="openNavigationBar" style="cursor: pointer" onclick="openNavigationBar()">&#9776;</h1>
+                </div>           
+            </div>
+
+          	<div id="navigationBar" class="navigation">
+            	<div class="leftNavigation">
+            		<p> HI THERE </p>
+            	</div>
+            	<div class="rightNavigation">
+            		<div class="closeNavigationBar" style="cursor: pointer" href="javascript:void(0)" onclick="closeNavigationBar()">&#10005;</div>
+                    <ul>
+                        <li class="navigationFont"> <a id="current" href="Home.html">HOME</a></li>
+                        <li class="navigationFont"> <a href="Sign_Up.html">SIGN UP</a></li>      
+                        <li class="navigationFont"> <a href="Blog.html">BLOG</a></li>
+                        <li class="navigationFont"> <a href="About_Us.html">ABOUT US</a></li>
+                        <li class="navigationFont"> <a href="Support.html">SUPPORT</a></li>
+                    </ul>
+            	</div>       
+            </div> 
+ <!-- END NAVIGATION BAR -->              
+    	</div>
+                  
+             
+        <div class="quoteLayout">
+            <span class="quoteText">A TRAVELLER.....</span>
+        </div>
 
         <div class="textLayout">
             <h2>- - - The World of Travelling - - -</h2>
@@ -38,41 +71,45 @@
             
             <p style="color: #1B8FD0; text-align: left; font-size: 18px;"> **** FEATURED FROM: http://evirtualguru.com/essay-on-value-of-travelling-complete-essay-for-class-10-class-12-and-graduation-and-other-classes/</p>
         </div>
-    
+<!-- END FIRST IMAGE, A TRAVELLER.....  -->          
+
+<!-- START SECOND IMAGE, WITHOUT OBSERVATION IS A....  -->     
         <div class="secondaryBackground  backgroundLayout">
             <div class="quoteLayout">
                 <span class="quoteText">WITHOUT OBSERVATION IS A.....</span>
             </div>
         </div>
     
-        <div class="textboxPosition">
-            <div class="subtextLayout">
-                <p> Look at the world from different perspectives to understand that beauty is all around you, in the small things that surround you. It is easier to see beyond the end of your nose when you travel........</p>
-            </div>
+        <div class="subtextLayout">
+            <p> Look at the world from different perspectives to understand that beauty is all around you, in the small things that surround you. It is easier to see beyond the end of your nose when you travel........</p>
         </div>
-    
+<!-- END SECOND IMAGE, WITHOUT OBSERVATION IS A....  --> 
+
+<!-- START THIRD IMAGE, BIRD WITHOUT WINGS.....  -->     
         <div class="thirdBackground backgroundLayout">
             <div class="quoteLayout">
                 <span class="quoteText">BIRD WITHOUT WINGS.</span>
             </div>
         </div>
     
-        <div class="textboxPosition">
-            <div class="subtextLayout">
-                <p>With all the challenges it presents, and opportunities laid at your feet, travel lets you discover who you are in a way that only the road brings.</p>
-            </div>
+        <div class="subtextLayout">
+            <p>With all the challenges it presents, and opportunities laid at your feet, travel lets you discover who you are in a way that only the road brings.</p>
         </div>
  		
-      	<div id="Bottom"></div>        
+      	<div id="Bottom"></div>  
+<!-- END THIRD IMAGE, BIRD WITHOUT WINGS.....  -->         
+        
+<!-- START MAIN IMAGE ....  -->          
         <div class="mainBackground backgroundLayout">
-         	<div class="jumpText_navigation">
-            	<div class="navigationIcon_navigation"> &#8648; </div>
-               	<div class="navigationText"> <a href="#Top"> Return to top page </a> </div>
+         	<div class="scrollingDown">
+            	<div class="scrollingIconUp">&#8648;</div>
+               	<div class="scrollingText"><a href="#Top">Return to top page</a></div>
           	</div> 
         
             <div class="quoteLayout">
                 <span class="quoteText">- MOSLI EDDIN SAADI</span>
             </div>
-        </div>  
+        </div> 
+<!-- END MAIN IMAGE ....  -->            
 	</body>
 </html>
