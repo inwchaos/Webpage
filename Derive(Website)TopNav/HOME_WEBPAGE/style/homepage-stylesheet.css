@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+-----------------------------------------
+	Mainily used duplicate CSS styles
+-----------------------------------------	
+*/
+
+.backgroundLayout {
+  	position: relative;
+  	background-attachment: fixed;
+  	background-position: center;	
+	background-size: cover;
+  	background-repeat: no-repeat;
+}
+
+.textLayout {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+	text-align: center justify;
+	color: #7E7C7C;
+	background-color: #ffffff;
+}
+
+.subtextLayout {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+	text-align: center justify;
+	color: #FFFFFF;
+	background-color: #272727;
+}
+
+.headertextLayout {
+	color: #F7F7F7;
+	font-size: 25px;
+	background-color:transparent;
+}
+
+.textboxPosition {
+	position: relative;	
+}
+
+/*
+-----------------------------------------
+	Background Images CSS styles
+-----------------------------------------	
+*/
+
+.mainBackground {
+  	background-image: url(../images/backgrounds/main-background.jpg);
+  	min-height: 100%;
+}
+
+.secondaryBackground {
+	background-image: url(../images/backgrounds/second-background.jpg);
+  	min-height: 400px;
+}
+
+.thirdBackground {
+  	background-image: url(../images/backgrounds/third-background.jpg);
+  	min-height: 400px;
+}
+
+.fourthBackground {
+  	background-image: url(../images/backgrounds/fourth-background.jpg);
+  	min-height: 100%;
+}
+
+/*
+----------------------------------
+	Main CSS styles start here
+----------------------------------	
+*/
+
+body, html {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: Rajdhani;
+	font-weight: 400;
+	font-size: 20px;	
+	color: #5E5E5E;
+}
+
+.quoteLayout {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top: 50%;
+	text-align: center;
+	color: 	#131313;
+}
+
+span.quoteText {
+	padding: 18px;
+	font-size: 40px;
+	letter-spacing: 10px;
+	color: #ffffff;
+	background-color: transparent;
+}
+
+.jumpText, .jumpText_navigation {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	right: 20px;
+	top: 1%;
+	text-align: right;
+	color: #585B5B;
+}
+
+.jumpText_navigation, .navigationIcon_navigation {
+	padding-top: inherit;
+}
+
+.navigationIcon, .navigationIcon_navigation {
+	position: inherit;
+	width: inherit;
+	height: inherit;
+	right: 205px;
+	top: -17px;
+	text-align: inherit;
+	background-color: transparent;		
+}
+
+
+.navigationIcon, .navigationIcon_navigation {
+	font-size: 50px;	
+}
+
+.navigationText {
+	font-size: 24px;
+}
+
+.navigationText:hover, a:focus, a:active  {
+	color: #223C6B;
+	text-decoration: underline;	
+}
+
+a:link, a:visited {
+	color: #585B5B;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+h1 {
+	-webkit-margin-before: 0px;	
+}
+
+h2 {
+	font-family: Amatic-SC;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 5px;
+	color: #008CBA;		
+}
+
+p {
+	text-align: center;
+}
+
+
+.navigationContainer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;	
+	overflow: hidden;
+}
+
+
+.navigationLayout {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+	text-align: center justify;
+	color: #E9191D;
+	overflow: hidden;
+	background-color: transparent;
+}
+
+div {
+display: block;	
+	
+	
+}
