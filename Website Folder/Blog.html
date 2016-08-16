@@ -3,14 +3,13 @@
 	<head>
         <meta charset = "UTF-8">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
-        <meta name="Description" content="All post that shows what you have posted" />
+        <meta name="Description" content="Shows all post that you submitted" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 
         <link rel = "stylesheet" type = "text/css" href = "./style/stylesheet.css">
-        <link rel = "stylesheet" type = "text/css" href = "./style/jquery-ui.css">
         <link rel = 'stylesheet' type = 'text/css' href = './Blog_Page/main.css'/>
         <link rel = 'stylesheet' type = 'text/css' href = './Blog_Page/opentabby.css'/>
 
@@ -25,66 +24,55 @@
     
 	<body>
     	<div class = "mainContainer">
-			<div class = "headContainer containerLayout">
+			<div class = "headContainer">
        	  		<h1 id = "headingTitle">Some Random Blog :)</h1>
             </div>
             
-            <div class = "navigationLayout menu">
-                <ul>
-                    <li class = "navigationFont"> <a id = "current" href = "Home.html"> HOME </a> </li>
-                    <li class = "navigationFont"> <a href = "Sign_Up.html"> SIGN UP </a> </li>      
-                    <li class = "navigationFont"> <a href = "Blog.html"> BLOG </a> </li>
-                    <li class = "navigationFont"> <a href = "About_Us.html"> ABOUT US </a> </li>
-                    <li class = "navigationFont"> <a href = "Support.html"> SUPPORT </a> </li>
-                </ul>
-            </div>
-            
-        	<div class = "bodyContainer containerLayout bodyFont">
-            	<div class = "blogContainer">
-                    <div class='openTabby' id='tabs1'>
-                        <div class='openTabby--slidesContainer'>
-
-                        <article id='1' data-tab-name='Currently Trending' class='openTabby--slide'>
-                            <h1>Something about HTML</h1>
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p>Lorem </p>
-                        </article>
-
-                        <article id='2' data-tab-name='Sort By Hottest' class='openTabby--slide'>
-                            <h1>Preprocessors?</h1>
-                            <h2>Sed ut perspiciatis unde omnis</h2>
-                            <p>Sed</p>
-                        </article>
-
-
-                        <article id='3' data-tab-name='Sort By Newest' class='openTabby--slide'>
-                            <h1>Interaction to web pages!</h1>
-                            <h2>At vero eos et accusamus</h2>
-                            <p>At</p>
-                        </article>
-
-                        <article id='4' data-tab-name='Sort By Oldest' class='openTabby--slide'>
-                            <h1>Server side? WHAT?!</h1>
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p>Lorem</p>
-                        </article>
-                            
-                        <article id='4' data-tab-name='Post a Blog' class='openTabby--slide'>
-                            <h1>Server side? WHAT?!</h1>
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p>Lorem</p>
-                        </article>
-
-                        </div>
-                    </div>
-
-                    <script>$(".openTabby").openTabby()</script>
-           	  	</div>
-                
-            	<div class = "mapContainer">
-                    <div id="map" style="width: 1000px; height: 400px;"></div>
+        	<div class = "bodyContainer bodyFont">
+                    
+                <div class = "mapContainer">
+                    <div id="map" ></div>
                     <script src="./scripts/Blog_Main.js"></script>
+                </div>                
+
+                <div class='openTabby' id='tabs1'>
+                    <div class='openTabby--slidesContainer'>
+
+                    <article id='1' data-tab-name='Currently Trending' class='openTabby--slide'>
+                        <h1>Something about HTML</h1>
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>Lorem </p>
+                    </article>
+
+                    <article id='2' data-tab-name='Sort By Hottest' class='openTabby--slide'>
+                        <h1>Preprocessors?</h1>
+                        <h2>Sed ut perspiciatis unde omnis</h2>
+                        <p>Sed</p>
+                    </article>
+
+
+                    <article id='3' data-tab-name='Sort By Newest' class='openTabby--slide'>
+                        <h1>Interaction to web pages!</h1>
+                        <h2>At vero eos et accusamus</h2>
+                        <p>At</p>
+                    </article>
+
+                    <article id='4' data-tab-name='Sort By Oldest' class='openTabby--slide'>
+                        <h1>Server side? WHAT?!</h1>
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>Lorem</p>
+                    </article>
+
+                    <article id='4' data-tab-name='Post a Blog' class='openTabby--slide'>
+                        <h1>Server side? WHAT?!</h1>
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>Lorem</p>
+                    </article>
+
+                    </div>
                 </div>
+                
+                <script>$(".openTabby").openTabby()</script>      
                 
             </div>
      	</div>

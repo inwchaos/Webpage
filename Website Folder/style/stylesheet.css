@@ -33,32 +33,12 @@
 -----------------------------------------	
 */
 
-.containerLayout {
-	position: relative;
-	float: none;
-	left: 125px;
-	width: auto;	
-}
-
-.navigationLayout {
-	position: relative;
-	left: -10px;
-	padding-right: -1px;
-	border-right-style: groove;
-}
-
-.navigationFont {
-	font-family: Rajdhani;
-   	font-weight: normal;	
-	font-size: 30px;
-	padding-top: 10px;
-}
-
 .bodyFont {
 	font-family: Archivo;
 	font-weight: normal;
 	font-size: 15px;
 }
+
 /*
 ----------------------------------
 	Main CSS styles start here
@@ -69,18 +49,6 @@ html {
 	background: url(../images/backgrounds/main-background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-}
-
-.mainContainer {
-	padding-right: 100px;	
-	margin-right: 150px;
-	margin-left: 150px;	
-}
-
-.headContainer {
-	position: relative;
-	height: auto;	
-	border-bottom-style: groove;	
 }
 
 h1#headingTitle {
@@ -94,61 +62,27 @@ h1#headingTitle {
     text-decoration: underline;
 }
 
-.menu{
-	position: absolute;
-	width: 250px;	
-    margin: 10px;
-	padding-top: 30px;
-	padding-bottom: 35px;
-	text-align: right;	
-}
-
-ul {
-	list-style-type: none;
-    margin: 0;
-    padding: 0;	
-}
-
-li a {
-    display: block;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: #585B5B;	
-}
-
-li a:hover {
-    color: #008CBA;
-	text-decoration: underline;
-    background-color: #EDEDED;	
-}
-
-li a#current {
-    color: #ffffff;	
-	background-color: #008CBA;
-	text-decoration: underline;	
-}
-
-li a:hover:not(#active){
-    color: #008CBA;	
-	background-color: transparent;	
+.mainContainer {
+    float:inherit;
 }
 
 .bodyContainer {	
 	height: auto;
 	padding-bottom: 10px;
+    margin:0 auto;
+    width:1000px;
+    align-content: center;
 }
 
-.blogContainer {
-	position: absolute;
-	left: 0;
-	height: inherit;
-	width: 690px;
+.headContainer {
+	position: relative;
+	height: auto;	
+	border-bottom-style: groove;	
 }
 
-.mapContainer {
-	position: absolute;
-	height: 40%;
-	width: 40%;	
+#map {
+    width: 100%; 
+    height: 400px;
 }
 
 
