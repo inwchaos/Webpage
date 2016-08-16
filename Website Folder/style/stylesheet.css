@@ -147,7 +147,6 @@ li a:hover:not(#active){
 
 .mapContainer {
 	position: absolute;
-	margin-left:690px;
 	height: 40%;
 	width: 40%;	
 }
