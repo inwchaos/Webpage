@@ -58,11 +58,12 @@
 */
 
 html {
-	background: url(../images/backgrounds/main-background.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+    background: url(../images/backgrounds/main-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     font-size: 100%;
     font-size: 16px;
+    
 }
 
 body {
@@ -96,7 +97,7 @@ h1.headder {
     margin-bottom: 0.875rem;
 }
 h2.sub {
-        margin: 3.5rem 0 0.875rem;
+    margin: 3.5rem 0 0.875rem;
 }
 
 h2.sub:first-of-type {
