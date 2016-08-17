@@ -27,9 +27,9 @@
     top: 0;
     right: 0;
     overflow-x: hidden;
-    transition: 0.7s;
+    transition: 0.5s;
     text-align: center;
-    z-index: 1;		
+    z-index: 100;		
 }
 
 .navigation a {
@@ -37,16 +37,19 @@
     text-decoration: none;
     font-size: 25px;
     color: #818181;
-    transition: 0.3s;	
+    transition: 0.5s;	
 }
 
 .leftNavigation {
 	position: absolute;
-	min-height: 100%;	
+	min-height: 100%;
+	top: 0;	
 	left: 0;
 	width: 75%;	
 	background: #242422;
 	opacity: 0.93;
+	overflow: auto;	
+	overflow-x: hidden;	
 }
 
 .rightNavigation {
@@ -55,24 +58,58 @@
 	right: 0;
 	width: 25%;	
 	background: #242422;
+	font-family: Rajdhani;
+	overflow: auto;	
+	overflow-x: hidden;	
 }
 
-.navigation .closeNavigationBar {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;	
-	border-radius: 5px;	
+.navigation .closeNavigationBar {		
     position: absolute;
-    top: 2%;
-    right: 25px;
+    top: 27px;
+	overflow-x: hidden;	
     font-size: 36px;
-    margin-left: 50px;
-	width: 85%;
+	width: 100%;
 	text-align: centre;
 	color: #ffffff;	
 }
 
 .closeNavigationBar:hover, .openNavigationBar:hover {
-	color: #008CBA;	
+	color: #048FA6;	
+}
+
+/*
+----------------------------------
+	Navigation CSS Starts Here
+----------------------------------	
+*/
+
+.navigationHead {
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 0;	
+	background-color: transparent;	
+    z-index: 3;	
+}
+
+.nameNavigation {	
+	position: fixed;
+	left: 11%;
+	top: 0%;
+	font-family: Chivo;
+	letter-spacing: 10px;
+	font-size: 20px;
+	text-spacing: 10px;		
+	color: #048FA6;
+	z-index: 10000;
+}
+
+.menuIconNavigation {	
+	position: fixed;	
+	top: -5px;
+	font-size: 20px;
+	right: 11.5%;
+	z-index: 1;
 }
 
 /*
@@ -81,9 +118,7 @@
 ---------------------------------------------------------	
 */
 
-ul {
-	-webkit-margin-before: 0px;
-    -webkit-margin-after: 0px;	
+ul, .leftNavigationText {
 	list-style-type: none;
 	position: absolute;
 	width: 100%;
@@ -91,7 +126,8 @@ ul {
 	padding: 0;
 	margin: 0;
 	top: 31%;
-	text-align: center;		
+	text-align: center;
+	text-transform: uppercase;		
 }
 
 li a {
@@ -102,15 +138,16 @@ li a {
 }
 
 li a:hover {
-    color: #008CBA;
+    color: #048FA6;
 	text-decoration: underline;
     background-color: #EDEDED;	
 }
 
 li a#current {
     color: #ffffff;	
-	background-color: #008CBA;
+	background-color:#048FA6;
 	text-decoration: underline;	
+	transition: 0.5s;
 }
 
 li a:hover:not(#active){

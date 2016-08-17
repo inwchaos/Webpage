@@ -7,13 +7,19 @@
 	
 1 - Title Font
 2 - Navigation Font
-3 - Body Font
+3 - Main Font
+4 - Body Font
 -------------------	
 */
 
 @font-face {
 	font-family: Amatic-SC;	
 	src: url(../fonts/title/AmaticSC-Bold.ttf);
+}
+
+@font-face {
+	font-family: Chivo;	
+	src: url(../fonts/title/Chivo-Regular.ttf)
 }
 
 @font-face {
