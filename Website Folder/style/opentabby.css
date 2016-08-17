@@ -277,22 +277,21 @@
 }
 
 .openTabby .openTabby--nav ul li:last-child {
-    position: absolute;
-    margin-left:92%;
+    position:absolute;
+    right:15px;
 }
 
 .openTabby .openTabby--nav ul li:last-child:hover {
-    font-weight:600;
     color: darkred;
-    position: absolute;
-    margin-left:92%;
+    position:absolute;
+    right:15px;
 }
 
 .openTabby .openTabby--nav ul li:last-child.active {
-  font-weight:600;
-  color: darkred;
-    position: absolute;
-    margin-left:92.7%;
+    font-weight:600;
+    color: darkred;
+    position:absolute;
+    right:0;
 }
 
 .openTabby .openTabby--slidesContainer {

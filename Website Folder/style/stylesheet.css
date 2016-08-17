@@ -27,6 +27,18 @@
 	src: url(../fonts/body/ArchivoNarrow-Regular.ttf);	
 }
 
+@media screen and (max-width: 960px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+
 /*
 -----------------------------------------
 	Mainily used duplicate CSS styles
@@ -104,17 +116,6 @@ h2.sub:first-of-type {
 #map {
     width: 100%; 
     height: 450px;
-}
-
-@media screen and (max-width: 960px) {
-    html {
-        font-size: 14px;
-    }
-}
-@media screen and (max-width: 640px) {
-    html {
-        font-size: 12px;
-    }
 }
 
 
