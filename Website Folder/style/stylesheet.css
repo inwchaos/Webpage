@@ -68,6 +68,10 @@ html {
 body {
     padding: 3rem;
     font-family: "Raleway", sans-serif;
+    -moz-transform: scale(.9,.9);
+    -webkit-zoom: .9;
+    -ms-zoom: .9;
+    zoom: .9;
 }
 
 * {
