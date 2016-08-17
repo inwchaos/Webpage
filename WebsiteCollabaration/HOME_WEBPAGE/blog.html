@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ATTACHED STYLESHEETS -->        
+        <link rel="stylesheet" type ="text/css" href="style/font-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="style/navigation-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="style/main-stylesheet.css">
+        <link href="style/opentabby.css" rel="stylesheet" type="text/css">
+        <link href="style/stylesheet.css" rel="stylesheet" type="text/css">      
+<!-- ATTACHED SCRIPTS -->           
+        <script type="text/javascript" src="scripts/navigationBar.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="http://www.jqueryscript.net/css/jquerysctipttop.css"></script>
+        <script src="http://fonts.googleapis.com/css?family=Raleway"></script>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="./scripts/opentabby.js"></script>                   
+        <title>DÉRIVE</title>
+    </head>
+	
+    <body>
+<!-- START NAVIGATION BAR --> 
+		<div class="navigationHead">  
+         	<div class="nameNavigation">
+            	<h1>D<span style="color:#FFFFFF">É</span>RIVE</h1>
+          	</div>                     
+          	<div class="menuIconNavigation">
+               	<h1 class="openNavigationBar" style="cursor: pointer" onclick="openNavigationBar()">&#9776;</h1>
+         	</div> 
+
+          	<div id="navigationBar" class="navigation">
+            	<div class="leftNavigation">
+
+                 	<div class="leftNavigationText">                
+            			<p> HI THERE, some lovely text </p>
+                    </div>
+            	</div>
+            	<div class="rightNavigation">
+            		<div class="closeNavigationBar" style="cursor: pointer" href="javascript:void(0)" onclick="closeNavigationBar()">&#10005;</div>
+                    <ul class="navigationLinks">
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="home.html">Home</a></li>
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="signup.html">Sign Up</a></li>      
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="blog.html">Blog</a></li>
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" id="current" href="about.html">About Us</a></li>
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="support.html">Support</a></li>
+                    </ul>
+            	</div>       
+            </div> 
+     	</div>    
+<!-- END NAVIGATION BAR --> 
+
+<!-- START MAIN BLOG CONTAINER --> 
+ 		<div class = "test">
+        some text
+        </div> 
+        
+ 		<div class = "bodyContainer">
+            <div class = "mapContainer">
+                <div id="map" ></div>
+                <script src="./scripts/Google_Map.js"></script>
+            </div>                
+
+            <div class="openTabby">
+                <div class="openTabby--slidesContainer">
+
+                <article id="1" data-tab-name="Currently Trending" class="openTabby--slide">
+                    <h1 class="headder">Currently Trending</h1>
+                    <h2 class="sub">-Hot post! Read all about it</h2>
+                    <p>Blogs posts ...E.E </p>
+                </article>
+
+                <article id="2" data-tab-name="Sort By Hottest" class="openTabby--slide">
+                    <h1 class="headder">Sort by Hottest</h1>
+                    <h2 class="sub">Most recent up the top</h2>
+                    <p>maor blogs </p>
+                </article>
+
+                <article id="3" data-tab-name="Sort By Newest" class="openTabby--slide">
+                    <h1 class="headder">Sort by Newest</h1>
+                    <h2 class="sub">Most new :3</h2>
+                    <p>Another one.. who knew </p>
+                </article>
+
+                <article id="4" data-tab-name="Sort By Oldest" class="openTabby--slide">
+                    <h1 class="headder">Sort by Oldest</h1>
+                    <h2 class="sub">Ehh so old</h2>
+                    <p>so much fun </p>
+                </article>
+
+                <article id="5" data-tab-name="Post a Blog" class="openTabby--slide">
+                    <h1 class="headder">Post your news to the board</h1>
+                    <h2 class="sub">WHY NOT POST?</h2>
+                    <p>text text </p>
+                </article>
+
+                </div>
+            </div>
+
+            <script>$(".openTabby").openTabby()</script>      
+
+        </div>         
+<!-- END MAIN BLOG CONTAINER BODY -->         
+        <div class="footerHead">
+        some random footer text
+        
+        
+        </div>                
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>
