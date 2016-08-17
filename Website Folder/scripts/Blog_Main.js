@@ -9,8 +9,8 @@ function ajax_test(location)
                
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: position, lng: position1},
-        zoom: 8
-    });
+            zoom: 8
+        });
     });     
 };
 
