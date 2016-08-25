@@ -8,7 +8,8 @@
         <link rel="stylesheet" type="text/css" href="style/navigation-stylesheet.css">
         <link rel="stylesheet" type="text/css" href="style/main-stylesheet.css">
         <link href="style/stylesheet.css" rel="stylesheet" type="text/css">
-        <link href="style/tabs-stylesheet.css" rel="stylesheet" type="text/css">        
+        <link href="style/tabs-stylesheet.css" rel="stylesheet" type="text/css">       
+        <link rel="stylesheet" type="text/css" href="style/footer-stylesheet.css">        
 <!-- ATTACHED SCRIPTS -->           
         <script type="text/javascript" src="scripts/navigationBar.js"></script>
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
@@ -20,6 +21,7 @@
     </head>
 	
     <body>
+        <div id="wrapper">
 <!-- START NAVIGATION BAR --> 
 		<div class="navigationHead">  
          	<div class="nameNavigation">
@@ -50,12 +52,8 @@
      	</div>    
 <!-- END NAVIGATION BAR --> 
 
-<!-- START MAIN BLOG CONTAINER --> 
- 		<div class = "test">
-        some text
-        </div> 
-        
- 		<div class = "bodyContainer">
+<!-- START MAIN BLOG CONTAINER -->         
+ 		<div class = "contentContainer">
             <div class = "mapContainer">
                 <div id="map" ></div>
                 <script src="./scripts/Google_Map.js"></script>
@@ -115,9 +113,25 @@
 
         </div>         
 <!-- END MAIN BLOG CONTAINER BODY -->         
-        <div class="footerHead">
-        some random footer text
-        </div>                
-        
+            <div class="footerContainer">
+            	<div class="footerItems">
+                    <div id="footerLogo">
+                        <h1><span style="font-size: 25px;">D</span>ÉRIVE</h1>
+                    </div>
+                    <div id="footerLeftSide">
+                    	<p id="LeftText1">© 2016 DÉRIVE Institution. Inc</p>
+                        <p id="LeftText2">All rights reserved. Powered by 404</p>
+                    </div>
+                    <div id="footerCenter">
+                        <a class="LeftTextNavigation" href="#">Privacy</a>
+                        <a class="LeftTextNavigation" href="#">Terms</a>
+                        <a class="LeftTextNavigation" href="#">Safety and Use</a>
+                    </div>
+                     <div id="footerRightSide">
+						<p> hello </p>
+                    </div>
+              	</div>
+            </div>                   
+</div>
     </body>
 </html>

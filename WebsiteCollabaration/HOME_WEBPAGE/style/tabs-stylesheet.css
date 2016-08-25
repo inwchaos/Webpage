@@ -41,7 +41,7 @@ main {
     padding: 0 0 1px 0;
     margin: 0 auto;
     background: #fff;
-    height:310px
+    height:295px
 }
 
 section {
@@ -88,6 +88,6 @@ input:checked + label {
 #tab4:checked ~ #content4,
 #tab5:checked ~ #content5{
     display: block;
-    height:239px;
+    height:230px;
     overflow:auto;
 }
