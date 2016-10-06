@@ -1,0 +1,8 @@
+@font-face {
+	font-fmaily: Archivo;
+	src: url(../fonts/body/ArchivoNarrow-Regular.ttf);	
+}
+
+body {
+	font-family: Archivo;
+}

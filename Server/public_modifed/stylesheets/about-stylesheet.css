@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+.leftContent {
+	position: absolute;
+	height: 100%;
+	top: 0;	
+	left: 0;
+	width: 75%;	
+	background: #242422;
+	opacity: 0.93;
+	overflow: auto;	
+	overflow-x: hidden;	
+}
+
+.rightContent {
+	position: absolute;
+	height: 100%;	
+	right: 0;
+	width: 25%;	
+	background: #242422;
+	font-family: Rajdhani;
+	overflow: auto;	
+	overflow-x: hidden;	
+}
