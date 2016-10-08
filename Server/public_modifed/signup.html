@@ -4,27 +4,22 @@
     	<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- ATTACHED STYLESHEETS -->        
-        <link rel="stylesheet" type ="text/css" href="stylesheets/font-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/font-stylesheet.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/navigation-stylesheet.css">
-        <link rel="stylesheet" type="text/css" href="stylesheets/main-stylesheet.css">
-        <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">        
-        <link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css">
-        <link href="stylesheets/tabs-stylesheet.css" rel="stylesheet" type="text/css">       
         <link rel="stylesheet" type="text/css" href="stylesheets/footer-stylesheet.css">        
-<!-- ATTACHED SCRIPTS -->           
-        <script type="text/javascript" src="javascripts/navigationBar.js"></script>
-        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <script src="http://www.jqueryscript.net/css/jquerysctipttop.css"></script>
-        <script src="http://fonts.googleapis.com/css?family=Raleway"></script>
-        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheets/main-stylesheet.css">   
+        <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">             
+<!-- ATTACHED SCRIPTS -->  
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="javascripts/Data Handling.js"></script>         
         <script type="text/javascript" src="javascripts/navigationBar.js"></script>
   		<script type="text/javascript" src="javascripts/changeFooterIcon.js"></script>
-        <script type="text/javascript" src="javascripts/navigationTimeDisplay.js"></script>  
-       	<link rel="shortcut icon" type="image/x-icon" href="images/Icons/Derive_Icon.ico">      
-        <title>DÉRIVE | Blog</title>  
+        <script type="text/javascript" src="javascripts/navigationTimeDisplay.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="images/Icons/Derive_Icon.ico">  
+        <title>DÉRIVE | Sign Up</title>
     </head>
     <body>
-<!-- START NAVIGATION BAR -->         
+<!-- START NAVIGATION BAR -->            
         <div class="navigationHead">  
             <div class="nameNavigation">
                 <h1><a id="navigationLogo" href="home.html">D<span style="color:#FFFFFF">É</span>RIVE</a></h1>
@@ -32,7 +27,6 @@
             <div class="menuIconNavigation">
                 <h1 class="openNavigationBar" style="cursor: pointer" onclick="openNavigationBar()">&#9776;</h1>
             </div> 
-
             <div id="navigationBar" class="navigation">
                 <div class="leftNavigation">
                     <div class="leftNavigationText">   
@@ -43,67 +37,28 @@
                     <div class="closeNavigationBar" style="cursor: pointer" href="javascript:void(0)" onclick="closeNavigationBar()">&#10005;</div>
                     <ul class="navigationLinks">
                         <li class="navigationLink navigationFont"> <a class="navigationLink" href="home.html">Home</a></li>
-                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="signup.html">Sign Up</a></li>      
-                        <li class="navigationLink navigationFont"> <a class="navigationLink" id="current" href="blog.html">Blog</a></li>
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" id="current" href="signup.html">Sign Up</a></li>      
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="blog.html">Blog</a></li>
                         <li class="navigationLink navigationFont"> <a class="navigationLink" href="destinations.html">Places Visited</a></li>
                         <li class="navigationLink navigationFont"> <a class="navigationLink" href="about.html">About Us</a></li>
                         <li class="navigationLink navigationFont"> <a class="navigationLink" href="support.html">Support</a></li>
                     </ul>
                 </div>       
             </div> 
-        </div>   
+        </div>    
 <!-- END NAVIGATION BAR --> 
- <!-- START MAIN CONTAINER -->             
-        <div class = "contentContainer ContentText">
+<!-- START MAIN CONTAINER -->         
+        <div class = "contentContainer ContentText">    
             <div id="content">
                 <div id="scrollableContent">
                     <div id="paddingContent">
-                        <div class = "mapContainer">
-                            <div id="map" ></div>
-                            <script src="./javascripts/Google_Map.js"></script>
-                        </div>                
-                        <main>
-                            <input id="tab1" type="radio" name="tabs" checked>
-                            <label for="tab1">Currently Trending</label>
-                            <input id="tab2" type="radio" name="tabs">
-                            <label for="tab2">Sort By Hottest</label>
-                            <input id="tab3" type="radio" name="tabs">
-                            <label for="tab3">Sort By Newest</label>
-                            <input id="tab4" type="radio" name="tabs">
-                            <label for="tab4">Sort By Oldest</label>
-                            <input id="tab5" type="radio" name="tabs">
-                            <label for="tab5" style="float:right;"><a class="blog_post" href="post.html"><span>POST A BLOG </span></a></label>
-                            <section id="content1">
-                                <h1 class="headder">Your Header TitleL 1</h1>
-                                <h2 class="sub">Your subtitle></h2>
-                                <p class="Parag">Your paragraph text </p>
-                                <p class="Parag">Your paragraph text </p>
-                                <p class="Parag">Your paragraph text </p>
-                                <p class="Parag">Your paragraph text </p>
-                                <p class="Parag">Your paragraph text </p>
-                            </section>
-                            <section id="content2">
-                                <h1 class="headder">Your Header TitleL 2</h1>
-                                <h2 class="sub">Your subtitle></h2>
-                                <p class="Parag">Your paragraph text </p>
-                            </section>
-                            <section id="content3">
-                                <h1 class="headder">Your Header TitleL 3</h1>
-                                <h2 class="sub">Your subtitle></h2>
-                                <p class="Parag">Your paragraph text </p>
-                            </section>
-                            <section id="content4">
-                                <h1 class="headder">Your Header TitleL 4</h1>
-                                <h2 class="sub">Your subtitle></h2>
-                                <p class="Parag">Your paragraph text </p>
-                            </section>
-                        </main>  
+                        <h2> Sign Up Below </h2>
                     </div>
                 </div>
             </div>       
         </div>
 <!-- END MAIN CONTAINER -->          
-<!-- START FOOTER BAR --> 
+<!-- START FOOTER BAR -->         
         <div class="footerContainer">
             <div class="footerItems">
                 <div id="footerLogo">
@@ -123,7 +78,7 @@
                     <a class="LeftTextNavigation" href="about.html">About Us</a>
                     <a class="LeftTextNavigation" href="support.html">Support</a>                          
                 </div>
-                 <div id="footerRightSide">
+                <div id="footerRightSide">
                     <p id="RightText1" class="FooterText">KEEP UP &#8226; CONNECT &#8226; FOLLOW US</p>
                     <div id="footerContactIcons">
                         <a href="https://www.facebook.com/"><img src="images/Icons/Facebook_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Facebook Icon"/></a>
@@ -133,7 +88,7 @@
                     </div>
                 </div>
             </div>          
-        </div>   
-    <!-- END FOOTER BAR -->    
+        </div>        
+<!-- END FOOTER BAR -->         
     </body>
 </html>

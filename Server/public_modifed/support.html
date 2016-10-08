@@ -11,13 +11,12 @@
 <!-- ATTACHED SCRIPTS -->           
         <script type="text/javascript" src="javascripts/navigationBar.js"></script>
   		<script type="text/javascript" src="javascripts/changeFooterIcon.js"></script>
+        <script type="text/javascript" src="javascripts/navigationTimeDisplay.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="images/Icons/Derive_Icon.ico">  
         <title>DÉRIVE | Support</title>
     </head>
-
-<body>
-    <div id="header">
-<!-- START NAVIGATION BAR -->         
+    <body>
+<!-- START NAVIGATION BAR -->           
         <div class="navigationHead">  
             <div class="nameNavigation">
                 <h1><a id="navigationLogo" href="home.html">D<span style="color:#FFFFFF">É</span>RIVE</a></h1>
@@ -25,11 +24,10 @@
             <div class="menuIconNavigation">
                 <h1 class="openNavigationBar" style="cursor: pointer" onclick="openNavigationBar()">&#9776;</h1>
             </div> 
-
             <div id="navigationBar" class="navigation">
                 <div class="leftNavigation">
-                    <div class="leftNavigationText">                
-                        <p> HI THERE, some lovely text </p>
+                    <div class="leftNavigationText">   
+                        <p><span id="userDate"></span><sup><span id="ordinalIndicator"></span></sup> <span id="userTime"></span> <br> <span id="timePeriod"></span>, ___________.</p>           
                     </div>
                 </div>
                 <div class="rightNavigation">
@@ -38,32 +36,28 @@
                         <li class="navigationLink navigationFont"> <a class="navigationLink" href="home.html">Home</a></li>
                         <li class="navigationLink navigationFont"> <a class="navigationLink" href="signup.html">Sign Up</a></li>      
                         <li class="navigationLink navigationFont"> <a class="navigationLink" href="blog.html">Blog</a></li>
-                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="previous_destinations.html">Places Visited</a></li>
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="destinations.html">Places Visited</a></li>
                         <li class="navigationLink navigationFont"> <a class="navigationLink" href="about.html">About Us</a></li>
                         <li class="navigationLink navigationFont"> <a class="navigationLink" id="current" href="support.html">Support</a></li>
                     </ul>
                 </div>       
             </div> 
-        </div>   
+        </div>      
 <!-- END NAVIGATION BAR --> 
-    </div>
-          
-	<div class = "contentContainer ContentText">
-<!-- START MAIN CONTAINER -->     
-        <div id="content">
-            <div id="scrollableContent">
-                <div id="paddingContent">
-                    <p>
-						blank template
-            		</p>
-            	</div>
-        	</div>
-    	</div>
-<!-- END MAIN CONTAINER -->         
-	</div>
-    
-    <div id="footer">
-<!-- START FOOTER BAR --> 
+<!-- START MAIN CONTAINER --> 
+        <div class = "contentContainer ContentText">
+            <div id="content">
+                <div id="scrollableContent">
+                    <div id="paddingContent">
+                        <p>
+                            blank template
+                        </p>
+                    </div>
+                </div>
+            </div>       
+        </div>
+<!-- END MAIN CONTAINER -->          
+<!-- START FOOTER BAR -->        
         <div class="footerContainer">
             <div class="footerItems">
                 <div id="footerLogo">
@@ -79,12 +73,11 @@
                     <a id="footerSplitter"/>
                     <a class="LeftTextNavigation" href="home.html">Home</a>
                     <a class="LeftTextNavigation" href="blog.html">Blog</a>
-                    <a class="LeftTextNavigation" href="previous_destinations.html">Places Visited</a>
+                    <a class="LeftTextNavigation" href="destinations.html">Places Visited</a>
                     <a class="LeftTextNavigation" href="about.html">About Us</a>
                     <a class="LeftTextNavigation" href="support.html">Support</a>                        
-                    
                 </div>
-                 <div id="footerRightSide">
+                <div id="footerRightSide">
                     <p id="RightText1" class="FooterText">KEEP UP &#8226; CONNECT &#8226; FOLLOW US</p>
                     <div id="footerContactIcons">
                         <a href="https://www.facebook.com/"><img src="images/Icons/Facebook_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Facebook Icon"/></a>
@@ -94,8 +87,7 @@
                     </div>
                 </div>
             </div>          
-        </div>   
-<!-- END FOOTER BAR -->      
-    </div>
-</body>
+        </div>        
+<!-- END FOOTER BAR -->         
+    </body>
 </html>

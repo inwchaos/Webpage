@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* CSS Document */
+/* Footer CSS Document */
 
 /*
 -------------------
@@ -11,6 +11,7 @@
 	font-family: Rajdhani;
    	font-weight: normal;	
 	font-size: 17px;
+	text-decoration: none;
 }
 
 .FooterText {
@@ -80,7 +81,7 @@ a.LeftTextNavigation {
 	right: 0;
 	top: 90px;
 	marigin: 0 40%;
-	left: -150px;
+	left: -100px;
 	text-align: center;
 }
 

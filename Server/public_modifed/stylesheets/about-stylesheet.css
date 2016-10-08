@@ -1,25 +1,26 @@
 @charset "utf-8";
 /* CSS Document */
 
-.leftContent {
-	position: absolute;
+#aboutSplitContainer {
+    width:inherit;
 	height: 100%;
-	top: 0;	
-	left: 0;
-	width: 75%;	
-	background: #242422;
-	opacity: 0.93;
-	overflow: auto;	
-	overflow-x: hidden;	
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.rightContent {
-	position: absolute;
-	height: 100%;	
+#aboutLeftContent {
+    float:left;
+	left: 0;
+	height: 100%;
+    width:50%;
+	background-color: transparent;
+}
+
+#aboutRightContent {
+	text-align: center;
+    float:right;
 	right: 0;
-	width: 25%;	
-	background: #242422;
-	font-family: Rajdhani;
-	overflow: auto;	
-	overflow-x: hidden;	
+    width:50%;
+	height: 100%;
+	background-color: #EAEAEA;
 }

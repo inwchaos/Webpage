@@ -1,15 +1,10 @@
 @charset "utf-8";
-/* CSS Document */
+/* Font CSS Document */
 
 /*
--------------------
+--------------------------------
 	Font styles - CSS Styles
-	
-1 - Title Font
-2 - Navigation Font
-3 - Main Font
-4 - Body Font
--------------------	
+--------------------------------
 */
 
 @font-face {
@@ -25,9 +20,4 @@
 @font-face {
 	font-family: Rajdhani;
 	src: url(../fonts/navigation/Rajdhani-Regular.ttf);
-}
-
-@font-face {
-	font-fmaily: Archivo;
-	src: url(../fonts/body/ArchivoNarrow-Regular.ttf);	
 }

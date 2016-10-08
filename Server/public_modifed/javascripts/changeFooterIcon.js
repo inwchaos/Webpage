@@ -1,4 +1,4 @@
-// JavaScript Document
+// JavaScript Document to change the facebook, twitter, instagram and youtube footer icons from mouseover
 
 function ChangeIcon(image)
 {
