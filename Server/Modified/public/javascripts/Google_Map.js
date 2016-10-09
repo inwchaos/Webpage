@@ -11,6 +11,12 @@ function ajax_test(location)
         center: {lat: position, lng: position1},
             zoom: 8
         });
-    });     
+    
+    var marker = new google.maps.Marker({
+          position: {lat: position, lng: position1},
+          map: map
+        });    
+    
+    });
 };
 
