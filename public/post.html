@@ -3,21 +3,22 @@
 	<head>
     	<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- ATTACHED STYLESHEETS -->        
+<!-- ATTACHED STYLESHEETS -->
         <link rel="stylesheet" type="text/css" href="stylesheets/font-stylesheet.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/navigation-stylesheet.css">
-        <link rel="stylesheet" type="text/css" href="stylesheets/footer-stylesheet.css">        
-        <link rel="stylesheet" type="text/css" href="stylesheets/main-stylesheet.css">   
-        <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">             
-<!-- ATTACHED SCRIPTS -->  
+        <link rel="stylesheet" type="text/css" href="stylesheets/footer-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/main-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">
+<!-- ATTACHED SCRIPTS -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script type="text/javascript" src="javascripts/Data Handling.js"></script>         
+        <script type="text/javascript" src="javascripts/Data Handling.js"></script>
+        <script type="text/javascript" src="javascripts/validation.js"></script>
         <script type="text/javascript" src="javascripts/navigationBar.js"></script>
   		<script type="text/javascript" src="javascripts/changeFooterIcon.js"></script>
-        <script type="text/javascript" src="javascripts/OnLoadFunction.js"></script>         
         <script type="text/javascript" src="javascripts/navigationTimeDisplay.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="images/Icons/Derive_Icon.ico">  
         <title>DÉRIVE | Blog Posting</title>
+
     </head>
     <body>
 <!-- START NAVIGATION BAR -->           
@@ -54,17 +55,17 @@
                 <div id="scrollableContent">
                     <div id="paddingContent">
                         <h2> Post Your Blog Comment Below </h2>
-                        <p> To ensure that this data is correctly sent, please make sure that when pressing "Current Location", the field for Country is changed.
-                            <button class="blog_post" onclick="SendData()">Current Location</button></p>
+                        <p> Please note that this website uses AJAX to call for current country. If the page doesn't proceed to the next page, please wait for a few minutes or refresh the page
                             <p hidden>Country: <span id="country"></span></p>
                             <p hidden>Latitude: <span id="latitude"></span></p>
                             <p hidden>Longitude: <span id="longitude"></span></p>
-                        <form name="submit_post" method="post" action="/submit">
-                            <p>Name of Current Place: <input type="text" id="current_place" name="current_place" required></p>
+                        <!--<button class="blog_post" onclick="SendData()">Current Location</button></p> -->
+                        <form name="submit_post" method="post" action="/submit" onsubmit="return validateForm();">
+                            <p>Name of Current Place: <input type="text" id="current_place" name="current_place" placeholder="Where are you at now?" required></p>
                             <p>Country: <input type="text" id="country_new" name="country_new" placeholder="This field will be auto-filled" readonly></p>
                             <p hidden>Latitude: <input type="text" id="latitude_new" name="latitude_new" placeholder="This field will be auto-filled" readonly></p>
                             <p hidden>Longitude: <input type="text" id="longitude_new" name="longitude_new" placeholder="This field will be auto-filled" readonly></p>
-                            <p>Comment: <input type="text" id="comment_now" name="comment_now" required></p>
+                            <textarea name="comment_now" id="comment_now" style="height: 200px; width: 330px; max-width: 330px;" placeholder="Write you comment below" required></textarea></br>
                             <input class="blog_post" type="submit" value="Submit Your Post">
                         </form>
                     </div>
