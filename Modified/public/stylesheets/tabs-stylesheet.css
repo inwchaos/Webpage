@@ -1,0 +1,93 @@
+/*
+----------------------------------
+	Tabs CSS styles start here
+----------------------------------	
+*/
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css');
+
+h1#headingTitle {
+	display: inline block;
+	padding-left: 5%;
+	font-family: Amatic-SC;
+   	font-weight: normal;
+   	font-size: 80px;
+    color: #585B5B;
+    text-align: left;
+    text-decoration: underline;
+}
+
+h1.headder {
+    font-size: 2.5rem;
+    margin-bottom: 0.875rem;
+}
+
+h2.sub {
+    margin: 3.5rem 0 0.875rem;
+}
+
+h2.sub:first-of-type {
+    margin-top: 0;
+}
+
+p.parag {
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+main {
+    min-width: 300px;
+    padding: 0 0 1px 0;
+    margin: 0 auto;
+    background: #fff;
+    height:295px
+}
+
+section {
+    display: none;
+    margin: 0 20px 20px 20px;
+    border-top: 1px solid #ddd;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+input:checked + label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-bottom: 2px solid orange;
+    border-top: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5{
+    display: block;
+    height:230px;
+    overflow:auto;
+}

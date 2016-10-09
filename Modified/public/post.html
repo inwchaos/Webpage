@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ATTACHED STYLESHEETS -->        
+        <link rel="stylesheet" type="text/css" href="stylesheets/font-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/navigation-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/footer-stylesheet.css">        
+        <link rel="stylesheet" type="text/css" href="stylesheets/main-stylesheet.css">   
+        <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">             
+<!-- ATTACHED SCRIPTS -->  
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="javascripts/Data Handling.js"></script>         
+        <script type="text/javascript" src="javascripts/navigationBar.js"></script>
+  		<script type="text/javascript" src="javascripts/changeFooterIcon.js"></script>
+        <script type="text/javascript" src="javascripts/navigationTimeDisplay.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="images/Icons/Derive_Icon.ico">  
+        <title>DÉRIVE | Blog Posting</title>
+    </head>
+    <body>
+<!-- START NAVIGATION BAR -->           
+        <div class="navigationHead">  
+            <div class="nameNavigation">
+                <h1><a id="navigationLogo" href="home.html">D<span style="color:#FFFFFF">É</span>RIVE</a></h1>
+            </div>                     
+            <div class="menuIconNavigation">
+                <h1 class="openNavigationBar" style="cursor: pointer" onclick="openNavigationBar()">&#9776;</h1>
+            </div> 
+            <div id="navigationBar" class="navigation">
+                <div class="leftNavigation">
+                    <div class="leftNavigationText">   
+                        <p><span id="userDate"></span><sup><span id="ordinalIndicator"></span></sup> <span id="userTime"></span> <br> <span id="timePeriod"></span>, ___________.</p>           
+                    </div>
+                </div>
+                <div class="rightNavigation">
+                    <div class="closeNavigationBar" style="cursor: pointer" href="javascript:void(0)" onclick="closeNavigationBar()">&#10005;</div>
+                    <ul class="navigationLinks">
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="home.html">Home</a></li>
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="signup.html">Sign Up</a></li>      
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="blog.html">Blog</a></li>
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="destinations.html">Places Visited</a></li>
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="about.html">About Us</a></li>
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="support.html">Support</a></li>
+                    </ul>
+                </div>       
+            </div> 
+        </div>    
+<!-- END NAVIGATION BAR --> 
+<!-- START MAIN CONTAINER -->               
+        <div class = "contentContainer ContentText">   
+            <div id="content">
+                <div id="scrollableContent">
+                    <div id="paddingContent">
+                        <h2> Post Your Blog Comment Below </h2>
+                        <p> To ensure that this data is correctly sent, please make sure that when pressing "Current Location", the field for Country is changed.
+                            <button class="blog_post" onclick="SendData()">Current Location</button></p>
+                            <p hidden>Country: <span id="country"></span></p>
+                            <p hidden>Latitude: <span id="latitude"></span></p>
+                            <p hidden>Longitude: <span id="longitude"></span></p>
+                        <form name="submit_post" method="post" action="/submit">
+                            <p>Name of Current Place: <input type="text" id="current_place" name="current_place"></p>
+                            <p>Country: <input type="text" id="country_new" name="country_new" placeholder="This field will be auto-filled" readonly></p>
+                            <p hidden>Latitude: <input type="text" id="latitude_new" name="latitude_new" placeholder="This field will be auto-filled" readonly></p>
+                            <p hidden>Longitude: <input type="text" id="longitude_new" name="longitude_new" placeholder="This field will be auto-filled" readonly></p>
+                            <p>Comment: <input type="text" id="name1" name="name1"></p>
+                            <input class="blog_post" type="submit" value="Submit Your Post" name="nam">
+                        </form>
+                    </div>
+                </div>
+            </div>        
+        </div>
+<!-- END MAIN CONTAINER -->         
+<!-- START FOOTER BAR -->
+        <div class="footerContainer">
+            <div class="footerItems">
+                <div id="footerLogo">
+                    <h1><span style="font-size: 25px;">D</span>ÉRIVE</h1>
+                </div>
+                <div id="footerLeftSide">
+                    <p id="LeftText1" class="FooterText">Powered by 404</p>
+                </div>
+                <div id="footerCenter">
+                    <a class="LeftTextNavigation" href="#">Privacy</a>
+                    <a class="LeftTextNavigation" href="#">Terms</a>
+                    <a class="LeftTextNavigation" href="#">Safety and Use</a>
+                    <a id="footerSplitter"/>
+                    <a class="LeftTextNavigation" href="home.html">Home</a>
+                    <a class="LeftTextNavigation" href="blog.html">Blog</a>
+                    <a class="LeftTextNavigation" href="destinations.html">Places Visited</a>
+                    <a class="LeftTextNavigation" href="about.html">About Us</a>
+                    <a class="LeftTextNavigation" href="support.html">Support</a>                          
+                </div>
+                <div id="footerRightSide">
+                    <p id="RightText1" class="FooterText">KEEP UP &#8226; CONNECT &#8226; FOLLOW US</p>
+                    <div id="footerContactIcons">
+                        <a href="https://www.facebook.com/"><img src="images/Icons/Facebook_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Facebook Icon"/></a>
+                        <a href="https://twitter.com/"><img src="images/Icons/Twitter_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Twitter Icon"/></a>
+                        <a href="https://www.instagram.com/"><img src="images/Icons/Instagram_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Instragram Icon"/></a> 
+                        <a href="https://www.youtube.com/"><img src="images/Icons/Youtube_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Youtube Icon"/></a>
+                    </div>
+                </div>
+            </div>          
+        </div>        
+<!-- END FOOTER BAR --> 
+    </body>
+</html>
