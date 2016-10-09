@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+h2 {
+	text-decoration: underline;
+	font-size: 40px;
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 0px;
+}
+
+h4 {
+	margin-top: 0px;
+	text-align: center;
+	font-size: 20px;
+}
+
+
+/*
+-------------------------------
+	Blog Posting Button CSS
+-------------------------------
+*/
+
+.blog_post, .blog_post:hover, span {
+	border-radius: 4px;
+	text-align: center; 
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.blog_post, .blog_post:hover {
+	padding: 15px;	
+}
+
+.blog_post {
+	background-color: transparent;
+	color: #000000;
+}
+
+.blog_post:hover {
+	background-color: #048FA6;
+	color: #FFFFFF;
+}	
+
