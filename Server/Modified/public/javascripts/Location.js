@@ -1,1 +1,0 @@
-var locations = [{"title" : "2", "lat" : "-34.9287", "lng" : "138.5986", "description" : ""},{"title" : "1", "lat" : "-34.9287", "lng" : "138.5986", "description" : "2"}];
