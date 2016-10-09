@@ -1,0 +1,1 @@
+var locations = [{"title" : "Testing", "lat" : "-35.0027", "lng" : "138.5886", "description" : "Blog Blog"}];
