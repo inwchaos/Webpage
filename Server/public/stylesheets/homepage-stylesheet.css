@@ -28,6 +28,17 @@
 	background-color: #272727;
 }
 
+.footerSection {
+	position: relative;
+	left:-80px; 
+	top: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+	text-align: center justify;
+}
+
 .headertextLayout {
 	color: #F7F7F7;
 	font-size: 25px;

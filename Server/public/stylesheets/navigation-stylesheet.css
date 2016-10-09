@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* CSS Document */
+/* Navigation CSS Document */
 
 /*
 -------------------
@@ -51,9 +51,14 @@ a#navigationLogo:link, a#navigationLogo:visited, a#navigationLogo:hover, a#navig
 	left: 0;
 	width: 75%;	
 	background: #242422;
+	color: #FFFFFF;
 	opacity: 0.93;
 	overflow: auto;	
 	overflow-x: hidden;	
+	text-align: center;
+	font-family: Rajdhani;
+   	font-weight: normal;	
+	font-size: 90px;
 }
 
 .rightNavigation {
@@ -69,7 +74,8 @@ a#navigationLogo:link, a#navigationLogo:visited, a#navigationLogo:hover, a#navig
 
 .navigation .closeNavigationBar {		
     position: absolute;
-    top: 12px;
+    top: 5px;
+	left: 13px;
 	overflow-x: hidden;	
     font-size: 36px;
 	width: 100%;
@@ -92,7 +98,6 @@ a#navigationLogo:link, a#navigationLogo:visited, a#navigationLogo:hover, a#navig
 	width: 100%;
 	padding: 0px;
 	top: 0;	
-	background-color: transparent;	
     z-index: 10;	
 }
 
@@ -102,15 +107,13 @@ a#navigationLogo:link, a#navigationLogo:visited, a#navigationLogo:hover, a#navig
 	top: 0%;
 	font-family: Chivo;
 	letter-spacing: 10px;
-	font-size: 13px;
-	text-spacing: 10px;		
-	color: #048FA6;
+	font-size: 13px;	
 	z-index: 10000;
 }
 
 .menuIconNavigation {	
 	position: fixed;	
-	top: 1px;
+	top: -4px;
 	font-size: 13px;
 	right: 11.5%;
 }
@@ -128,7 +131,7 @@ ul.navigationLinks, .leftNavigationText {
 	left: 0px;
 	padding: 0;
 	margin: 0;
-	top: 31%;
+	top: 30%;
 	text-align: center;
 }
 

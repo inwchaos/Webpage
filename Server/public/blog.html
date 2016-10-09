@@ -7,6 +7,7 @@
         <link rel="stylesheet" type ="text/css" href="stylesheets/font-stylesheet.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/navigation-stylesheet.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/main-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">        
         <link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css">
         <link href="stylesheets/tabs-stylesheet.css" rel="stylesheet" type="text/css">       
         <link rel="stylesheet" type="text/css" href="stylesheets/footer-stylesheet.css">        
@@ -16,120 +17,123 @@
         <script src="http://www.jqueryscript.net/css/jquerysctipttop.css"></script>
         <script src="http://fonts.googleapis.com/css?family=Raleway"></script>
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-        <title>DÉRIVE</title>
+        <script type="text/javascript" src="javascripts/navigationBar.js"></script>
+  		<script type="text/javascript" src="javascripts/changeFooterIcon.js"></script>
+        <script type="text/javascript" src="javascripts/navigationTimeDisplay.js"></script>  
+       	<link rel="shortcut icon" type="image/x-icon" href="images/Icons/Derive_Icon.ico">      
+        <title>DÉRIVE | Blog</title>  
     </head>
-	
     <body>
-        <div id="wrapper">
-<!-- START NAVIGATION BAR --> 
-		<div class="navigationHead">  
-         	<div class="nameNavigation">
-            	<h1>D<span style="color:#FFFFFF">É</span>RIVE</h1>
-          	</div>                     
-          	<div class="menuIconNavigation">
-               	<h1 class="openNavigationBar" style="cursor: pointer" onclick="openNavigationBar()">&#9776;</h1>
-         	</div> 
+<!-- START NAVIGATION BAR -->         
+        <div class="navigationHead">  
+            <div class="nameNavigation">
+                <h1><a id="navigationLogo" href="home.html">D<span style="color:#FFFFFF">É</span>RIVE</a></h1>
+            </div>                     
+            <div class="menuIconNavigation">
+                <h1 class="openNavigationBar" style="cursor: pointer" onclick="openNavigationBar()">&#9776;</h1>
+            </div> 
 
-          	<div id="navigationBar" class="navigation">
-            	<div class="leftNavigation">
-
-                 	<div class="leftNavigationText">                
-            			<p> HI THERE, some lovely text </p>
+            <div id="navigationBar" class="navigation">
+                <div class="leftNavigation">
+                    <div class="leftNavigationText">   
+                        <p><span id="userDate"></span><sup><span id="ordinalIndicator"></span></sup> <span id="userTime"></span> <br> <span id="timePeriod"></span>, ___________.</p>           
                     </div>
-            	</div>
-            	<div class="rightNavigation">
-            		<div class="closeNavigationBar" style="cursor: pointer" href="javascript:void(0)" onclick="closeNavigationBar()">&#10005;</div>
+                </div>
+                <div class="rightNavigation">
+                    <div class="closeNavigationBar" style="cursor: pointer" href="javascript:void(0)" onclick="closeNavigationBar()">&#10005;</div>
                     <ul class="navigationLinks">
                         <li class="navigationLink navigationFont"> <a class="navigationLink" href="home.html">Home</a></li>
                         <li class="navigationLink navigationFont"> <a class="navigationLink" href="signup.html">Sign Up</a></li>      
                         <li class="navigationLink navigationFont"> <a class="navigationLink" id="current" href="blog.html">Blog</a></li>
-                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="place.html">Places Visited</a></li>
+                        <li class="navigationLink navigationFont"> <a class="navigationLink" href="destinations.html">Places Visited</a></li>
                         <li class="navigationLink navigationFont"> <a class="navigationLink" href="about.html">About Us</a></li>
                         <li class="navigationLink navigationFont"> <a class="navigationLink" href="support.html">Support</a></li>
                     </ul>
-            	</div>       
+                </div>       
             </div> 
-     	</div>    
+        </div>   
 <!-- END NAVIGATION BAR --> 
-
-<!-- START MAIN BLOG CONTAINER -->         
- 		<div class = "contentContainer">
-            <div class = "mapContainer">
-                <div id="map" ></div>
-                <script src="./javascripts/Google_Map.js"></script>
-            </div>                
-
-            <main>
-                <input id="tab1" type="radio" name="tabs" checked>
-                <label for="tab1">Currently Trending</label>
-
-                <input id="tab2" type="radio" name="tabs">
-                <label for="tab2">Sort By Hottest</label>
-
-                <input id="tab3" type="radio" name="tabs">
-                <label for="tab3">Sort By Newest</label>
-
-                <input id="tab4" type="radio" name="tabs">
-                <label for="tab4">Sort By Oldest</label>
-
-                <input id="tab5" type="radio" name="tabs">
-                <label for="tab5" style="float:right;">Post a Blog</label>
-
-                <section id="content1">
-                    <h1 class="headder">Your Header TitleL 1</h1>
-                    <h2 class="sub">Your subtitle></h2>
-                    <p class="Parag">Your paragraph text </p>
-                    <p class="Parag">Your paragraph text </p>
-                    <p class="Parag">Your paragraph text </p>
-                    <p class="Parag">Your paragraph text </p>
-                    <p class="Parag">Your paragraph text </p>
-                </section>
-
-                <section id="content2">
-                    <h1 class="headder">Your Header TitleL 2</h1>
-                    <h2 class="sub">Your subtitle></h2>
-                    <p class="Parag">Your paragraph text </p>
-                </section>
-
-                <section id="content3">
-                    <h1 class="headder">Your Header TitleL 3</h1>
-                    <h2 class="sub">Your subtitle></h2>
-                    <p class="Parag">Your paragraph text </p>
-                </section>
-
-                <section id="content4">
-                    <h1 class="headder">Your Header TitleL 4</h1>
-                    <h2 class="sub">Your subtitle></h2>
-                    <p class="Parag">Your paragraph text </p>
-                </section>
-
-                <section id="content5">
-                    <p><a href="/post.html">Click here to redirect you to posting your coordinates</p>
-                </section>
-            </main>  
-
-        </div>         
-<!-- END MAIN BLOG CONTAINER BODY -->         
-            <div class="footerContainer">
-            	<div class="footerItems">
-                    <div id="footerLogo">
-                        <h1><span style="font-size: 25px;">D</span>ÉRIVE</h1>
+ <!-- START MAIN CONTAINER -->             
+        <div class = "contentContainer ContentText">
+            <div id="content">
+                <div id="scrollableContent">
+                    <div id="paddingContent">
+                        <div class = "mapContainer">
+                            <div id="map" ></div>
+                            <script src="./javascripts/Google_Map.js"></script>
+                        </div>                
+                        <main>
+                            <input id="tab1" type="radio" name="tabs" checked>
+                            <label for="tab1">Currently Trending</label>
+                            <input id="tab2" type="radio" name="tabs">
+                            <label for="tab2">Sort By Hottest</label>
+                            <input id="tab3" type="radio" name="tabs">
+                            <label for="tab3">Sort By Newest</label>
+                            <input id="tab4" type="radio" name="tabs">
+                            <label for="tab4">Sort By Oldest</label>
+                            <input id="tab5" type="radio" name="tabs">
+                            <label for="tab5" style="float:right;"><a class="blog_post" href="post.html"><span>POST A BLOG </span></a></label>
+                            <section id="content1">
+                                <h1 class="headder">Your Header TitleL 1</h1>
+                                <h2 class="sub">Your subtitle></h2>
+                                <p class="Parag">Your paragraph text </p>
+                                <p class="Parag">Your paragraph text </p>
+                                <p class="Parag">Your paragraph text </p>
+                                <p class="Parag">Your paragraph text </p>
+                                <p class="Parag">Your paragraph text </p>
+                            </section>
+                            <section id="content2">
+                                <h1 class="headder">Your Header TitleL 2</h1>
+                                <h2 class="sub">Your subtitle></h2>
+                                <p class="Parag">Your paragraph text </p>
+                            </section>
+                            <section id="content3">
+                                <h1 class="headder">Your Header TitleL 3</h1>
+                                <h2 class="sub">Your subtitle></h2>
+                                <p class="Parag">Your paragraph text </p>
+                            </section>
+                            <section id="content4">
+                                <h1 class="headder">Your Header TitleL 4</h1>
+                                <h2 class="sub">Your subtitle></h2>
+                                <p class="Parag">Your paragraph text </p>
+                            </section>
+                        </main>  
                     </div>
-                    <div id="footerLeftSide">
-                    	<p id="LeftText1">© 2016 DÉRIVE Institution. Inc</p>
-                        <p id="LeftText2">All rights reserved. Powered by 404</p>
+                </div>
+            </div>       
+        </div>
+<!-- END MAIN CONTAINER -->          
+<!-- START FOOTER BAR --> 
+        <div class="footerContainer">
+            <div class="footerItems">
+                <div id="footerLogo">
+                    <h1><span style="font-size: 25px;">D</span>ÉRIVE</h1>
+                </div>
+                <div id="footerLeftSide">
+                    <p id="LeftText1" class="FooterText">Powered by 404</p>
+                </div>
+                <div id="footerCenter">
+                    <a class="LeftTextNavigation" href="#">Privacy</a>
+                    <a class="LeftTextNavigation" href="#">Terms</a>
+                    <a class="LeftTextNavigation" href="#">Safety and Use</a>
+                    <a id="footerSplitter"/>
+                    <a class="LeftTextNavigation" href="home.html">Home</a>
+                    <a class="LeftTextNavigation" href="blog.html">Blog</a>
+                    <a class="LeftTextNavigation" href="destinations.html">Places Visited</a>
+                    <a class="LeftTextNavigation" href="about.html">About Us</a>
+                    <a class="LeftTextNavigation" href="support.html">Support</a>                          
+                </div>
+                 <div id="footerRightSide">
+                    <p id="RightText1" class="FooterText">KEEP UP &#8226; CONNECT &#8226; FOLLOW US</p>
+                    <div id="footerContactIcons">
+                        <a href="https://www.facebook.com/"><img src="images/Icons/Facebook_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Facebook Icon"/></a>
+                        <a href="https://twitter.com/"><img src="images/Icons/Twitter_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Twitter Icon"/></a>
+                        <a href="https://www.instagram.com/"><img src="images/Icons/Instagram_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Instragram Icon"/></a> 
+                        <a href="https://www.youtube.com/"><img src="images/Icons/Youtube_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Youtube Icon"/></a>
                     </div>
-                    <div id="footerCenter">
-                        <a class="LeftTextNavigation" href="#">Privacy</a>
-                        <a class="LeftTextNavigation" href="#">Terms</a>
-                        <a class="LeftTextNavigation" href="#">Safety and Use</a>
-                    </div>
-                     <div id="footerRightSide">
-						<p> hello </p>
-                    </div>
-              	</div>
-            </div>                   
-</div>
+                </div>
+            </div>          
+        </div>   
+    <!-- END FOOTER BAR -->    
     </body>
 </html>

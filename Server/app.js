@@ -34,8 +34,9 @@ app.post('/submit', function(req, res){
   var current_p =  JSON.stringify(req.body.current_place);
   var lang_n = JSON.stringify(req.body.longitude_new);
   var long_n = JSON.stringify(req.body.latitude_new);
-  var json_data = '[' + current_p + ', ' + long_n + ', ' + lang_n + ']'
-  var json_data_1 = ',[' + current_p + ', ' + long_n + ', ' + lang_n + ']'
+  var comment_location =  JSON.stringify(req.body.comment_now);
+  var json_data = '{"title" : ' + current_p + ', "lat" : ' + long_n + ', "lng" : ' + lang_n + ', "description" : ' + comment_location + '}';
+  var json_data_1 = ',{"title" : ' + current_p + ', "lat" : ' + long_n + ', "lng" : ' + lang_n + ', "description" : ' + comment_location + '}';
 
   if(req.body.current_place == "" || req.body.longitude_new == "" || req.body.latitude_new == "")
     res.redirect('/error');
@@ -49,7 +50,7 @@ app.post('/submit', function(req, res){
             return console.log(err);
           }
           var new_file = "var locations = [" + data + "];";
-          fs.writeFile('./public/Location.js', new_file);
+          fs.writeFile('./public/javascripts/Location.js', new_file);
         });
       }
       else
@@ -59,7 +60,7 @@ app.post('/submit', function(req, res){
             return console.log(err);
           }
           var new_file = "var locations = [" + data + "];";
-          fs.writeFile('./public/Location.js', new_file);
+          fs.writeFile('./public/javascripts/Location.js', new_file);
         });
     });
 
