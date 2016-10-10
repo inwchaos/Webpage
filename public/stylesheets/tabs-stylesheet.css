@@ -38,10 +38,7 @@ p.parag {
 
 main {
     min-width: 300px;
-    padding: 0 0 1px 0;
-    margin: 0 auto;
     background: #fff;
-    height:295px
 }
 
 section {
@@ -50,9 +47,10 @@ section {
     border-top: 1px solid #ddd;
 }
 
-input {
+input[type=radio] { 
     display: none;
 }
+
 
 label {
     display: inline-block;
@@ -88,6 +86,5 @@ input:checked + label {
 #tab4:checked ~ #content4,
 #tab5:checked ~ #content5{
     display: block;
-    height:230px;
-    overflow:auto;
+    padding-bottom:14px;
 }

@@ -1,1 +1,1 @@
-var locations = [{"title" : "Testing", "lat" : "-35.0027", "lng" : "138.5886", "description" : "Blog Blog"}];
+var locations = [{"title" : "Henley Beach", "lat" : "-34.9287", "lng" : "138.5986", "description" : "My dairy"},{"title" : "1", "lat" : "-34.9287", "lng" : "138.5986", "description" : "1"},{"title" : "ja", "lat" : "-34.9287", "lng" : "138.5986", "description" : "add"}];
